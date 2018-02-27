@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.4">
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.0.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="一个交互设计师的博客" />
+
+
+<meta name="description" content="WEB界面所依托的6个设计原理：直截了当、简化交互、足不出户、提供邀请、使用变换、即时反应。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WEB界面设计">
+<meta property="og:url" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/index.html">
+<meta property="og:site_name" content="xdoupd">
+<meta property="og:description" content="WEB界面所依托的6个设计原理：直截了当、简化交互、足不出户、提供邀请、使用变换、即时反应。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/00.jpg">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/01">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/02">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/03">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/04">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/05">
+<meta property="og:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/06">
+<meta property="og:updated_time" content="2017-08-03T12:31:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WEB界面设计">
+<meta name="twitter:description" content="WEB界面所依托的6个设计原理：直截了当、简化交互、足不出户、提供邀请、使用变换、即时反应。">
+<meta name="twitter:image" content="http://xdoupd.github.io/2017/06/13/WEB界面设计/WEB界面设计/00.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="xdoupd" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://xdoupd.github.io/2017/06/13/WEB界面设计/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+  <title>WEB界面设计 | xdoupd</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xdoupd</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个交互设计师的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xdoupd.github.io/2017/06/13/WEB界面设计/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHENGZHAO">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xdoupd">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">WEB界面设计</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-13T22:30:28+08:00">2017-06-13</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="WEB界面设计/00.jpg" alt="00"><br>WEB界面所依托的6个设计原理：直截了当、简化交互、足不出户、提供邀请、使用变换、即时反应。<br><a id="more"></a><br>蚂蚁金服设计的antd设计语言所遵循的也是这6个web界面设计原理  </p>
+<h6 id="原理一：直截了当"><a href="#原理一：直截了当" class="headerlink" title="原理一：直截了当"></a><strong>原理一：直截了当</strong></h6><p>需要在哪里输出，就要允许在哪里输入</p>
+<p><strong>一.页内编辑：单字段行内编辑、多字段行内编辑、覆盖层编辑</strong></p>
+<p><strong>1.单字段行内编辑：</strong>编辑操作发生在原处而不是单独的窗口或者单独的页面</p>
+<p>1.1 当 <em>易读性</em> 远比 <em>易编辑性</em> 重要时，可以使用单字段行内编辑，即在用户与内容进行交互时再给出可以编辑的提示</p>
+<p>考虑到这种交互方式的易发现性，这种交互方式应具备以下三种提示：<br>显示工具提示条、以黄色背景（或者其他颜色）突出显示可编辑区域、把光标修变成小手；<br>这种交互方式的缺点是易发现性较差，只有当用户把鼠标停留在标题上之后，这些提示才会出现；</p>
+<p>【示例】<br><img src="WEB界面设计/01" alt="01"><br>1.2 当需要突出操作行的 <em>易编辑性</em> 时，可使用 文字链/编辑图标</p>
+<p>这种交互方式的优点是具有易发现性，缺点是每添加一个编辑链接，都会涉及到页面的平衡和视觉干扰问题，同时也会增加理解理解页面的难度。而且如果功能及其提示在页面中的数量过多，很有可能造成功能的利用率下降。（即页面中放置了10个编辑链接，而每次被使用到的却只有1个，导致其余9个链接白白占据了页面空间，利用率却非常低下。）</p>
+<p>【示例】<br><img src="WEB界面设计/02" alt="02"><br><br><br><strong>易访问性</strong><br>由于行内编辑的隐性交互，导致其缺乏易访问性，即对于一些特殊群体，如肢体残疾、行动不便、视力不好及有其他生理疾病的用户在通过援助性技术访问网页时，也不会轻易发现这个行内编辑功能。</p>
+<p>从某种意义上来说，依赖于鼠标发现功能也会妨碍某些用户使用行内编辑。综上所述，加显性的编辑链接，有助于用户发现功能，同时也能提升功能的易访问性。</p>
+<p>有关易访问性的定义<br>网站易访问性研究：<a href="http://blog.csdn.net/delez/article/details/1778941" target="_blank" rel="noopener">http://blog.csdn.net/delez/article/details/1778941</a><br>WIPO世界知识产权组织对网站易访问性的定义：<a href="http://blog.csdn.net/delez/article/details/1778941" target="_blank" rel="noopener">http://blog.csdn.net/delez/article/details/1778941</a></p>
+<p><strong>2 多字段行内编辑</strong>  交互同单字段行内编辑，不同区别在于多字段为多个编辑项</p>
+<p><strong>2.1 多字段行内编辑示例</strong><br>【示例】<br><img src="WEB界面设计/03" alt="03"><br><br><br>“状态4为编辑保存后，为了表明新标题和内容已替换，注释背景变成黄色。几秒钟后，黄色淡出为正常的背景颜色”<br><br><br>【示例2】<br><img src="WEB界面设计/04" alt="04"><br><br><br><strong>2.2 易读性与易编辑性</strong><br>考虑易读性，视情况为用户提供如下组件：<br>编辑控件<br>字段提示<br>辅助用户输入的帮助文本<br>错误处理<br>援助性输入（例如 下拉菜单、日历选择控件）<br>编辑样式</p>
+<p>以上行内编辑可以保持编辑时不脱离页面其他元素，以便获取到相应的编辑信息帮助</p>
+<p><strong>3 覆盖层编辑</strong><br>当上下文对编辑任务不那么重要时；当编辑任务很复杂，不可能安排在同一个页面完成时；当嵌入页面的编辑区域过大，会导致页面整体下移过多，损害整体感时；可以选择中断当前页面信息流，利用一个轻量级的覆盖层为用户提供一个明确且充足的编辑空间。</p>
+<p>【示例1】<br><img src="WEB界面设计/05" alt="05"><br><br><br><strong>使用覆盖层时应该考虑如下因素</strong><br>编辑模块明显比显示结果大的多<br>在页面中为编辑模块开辟一块地方会导致重要信息被推向页面下方<br>展开后的编辑模块可能会有一部分伸到可见范围之外，而覆盖层可以保证编辑模块完全可见<br>用户不会频繁编辑内容<br>被编辑的项是一个整体，在编辑一组数据项时，不应该让覆盖层遮住类似的数据项。这样用户在编辑过程中，可以参照其他的项</p>
+<p><strong>行内编辑和覆盖层编辑的最佳实践</strong><br>对单个字段使用行内编辑<br>当编辑多个项中的一个时使用行内编辑，这样可以保持视图中的上下文<br>尽可能保证显示和编辑模式的大小相同，这样可以避免页面抖动，同时减少两个模式间的切换对用户造成的干扰<br>尽可能让显示和编辑模式的切换平滑而连续<br>在主要考虑易读性时，通过鼠标悬停邀请用户编辑<br>不要让用户通过双击切换至编辑模式<br>如果用户频繁编辑某个项的可能性比较大，可以在被编辑的项旁边放一个[编辑]链接，这样既可以从视觉上区分显示的文本和链接，又不至于分散用户的注意力<br>在编辑系列中的某一项时，应该在原地显示编辑链接，以便保持上下文<br>如果需要用户更过的关注被编辑的项时，可以使用覆盖层，这样可以消除意外修改关键值的可能性<br>不要针对多个字段创建多个覆盖层，如果想通过复杂的表单编辑一系列元素，应该使用一个覆盖层<br>在使用覆盖层时，尽量使用最轻量级的样式<br>如果使用隐性的提交编辑结果不够明显，可以使用按钮<br>在空间允许的情况下，要让用户通过按钮来保存和取消编辑<br>只要可能就要允许用户拖动覆盖层，以便看到被遮住的内容<br><br><br><strong>4 表格编辑</strong><br>向Excel的使用习惯保持一致<br><br><br><strong>5 群组编辑</strong><br>苹果的长按图标，抖动后可以进行群组编辑，在一定程度还是很直观的，但是其触发群组编辑模式和退出该模式的操作却不一样，这这就造成用户退出编辑模式时的不方便，也在一定程度上违背了对称性交互原则。</p>
+<p>对称性交互原则：<br>进入和退出编辑模式通常应该采用同样的交互风格，这样才有助于发现相反的操作，这就是对称性交互原则</p>
+<p>群组编辑中应当尽量遵循对称性交互原则</p>
+<p>【示例】<br><img src="WEB界面设计/06" alt="06"></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/31/读书笔记01丨《落差》/" rel="next" title="读书笔记01丨《落差》">
+                <i class="fa fa-chevron-left"></i> 读书笔记01丨《落差》
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/30/行住坐卧，念兹在兹/" rel="prev" title="行住坐卧，念兹在兹之电脑护理小记">
+                行住坐卧，念兹在兹之电脑护理小记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">SHENGZHAO</p>
+              <p class="site-description motion-element" itemprop="description">一个交互设计师的博客</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:shengzhaoid@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#原理一：直截了当"><span class="nav-number">1.</span> <span class="nav-text">原理一：直截了当</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SHENGZHAO</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.4"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
